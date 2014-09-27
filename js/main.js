@@ -1,15 +1,9 @@
 /* Main.js */
-$window = $(window);
-$frame = $("#todoist_frame");
-hidePremium();
-
+frame = document.getElementById("todoist-frame");
 $(window).resize(hidePremium);
 
+hidePremium();
 function hidePremium() {
-    $frame.height($window.height() + 39);
-    if ($frame.width() < 750) {
-        $frame.height($window.height() + 39);
-    } else {
-        $frame.height($window.height() + 18);
-    }
+  var buffer = (frame.offsetWidth < 750) ? 45 : 30;
+  frame.style.height = (window.innerHeight + buffer) + "px"
 }
