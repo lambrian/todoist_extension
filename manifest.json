@@ -5,6 +5,6 @@
   "description": "Todoist Dashboard on the new tab page",
   "browser_action": { },
   "chrome_url_overrides" : {
-    "newtab": "todoist_tab.html"
+    "newtab": "index.html"
   }
 }

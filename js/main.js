@@ -3,7 +3,8 @@ frame = document.getElementById("todoist-frame");
 $(window).resize(hidePremium);
 
 hidePremium();
+$(window).focus();
+
 function hidePremium() {
-  var buffer = (frame.offsetWidth < 750) ? 45 : 30;
-  frame.style.height = (window.innerHeight + buffer) + "px"
+  frame.style.height = (window.innerHeight + 24) + "px"
 }
